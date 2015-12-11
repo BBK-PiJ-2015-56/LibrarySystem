@@ -16,9 +16,8 @@ public class UserImpl implements User{
 		return Id;
 	}
 	public int register(Library lib){
-		lib.register();
+		Id = lib.registerAUser(name);
 		nameOfLibrary = lib.toString();
-		Id = lib.getId();
 		return Id;
 	}
 	public String getLibrary(){
